@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="200" height="200" fill="url(#bg)" rx="20"/>
+  
+  <!-- Main shapes arrangement -->
+  <g filter="url(#glow)">
+    <!-- Triangle -->
+    <polygon points="100,30 70,80 130,80" fill="#FF6B6B" stroke="#4ECDC4" stroke-width="2"/>
+    
+    <!-- Circle -->
+    <circle cx="60" cy="120" r="20" fill="#45B7D1" stroke="#96CEB4" stroke-width="2"/>
+    
+    <!-- Square -->
+    <rect x="120" y="100" width="40" height="40" fill="#FFEAA7" stroke="#DDA0DD" stroke-width="2"/>
+    
+    <!-- Diamond -->
+    <polygon points="100,150 85,165 100,180 115,165" fill="#98D8C8" stroke="#F7DC6F" stroke-width="2"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="195" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">GeoShapes</text>
+</svg> 
