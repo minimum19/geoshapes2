@@ -28,16 +28,6 @@ const MAX_SUPPLY = 10000n
 const MINT_PRICE = '0.0001'
 
 // ABI definitions
-const MINTED_BY_ABI = [
-  {
-    type: 'function',
-    name: 'mintedBy',
-    inputs: [{ name: 'minter', type: 'address', internalType: 'address' }],
-    outputs: [{ name: '', type: 'uint256', internalType: 'uint256' }],
-    stateMutability: 'view',
-  },
-] as const
-
 const TOTAL_SUPPLY_ABI = [
   {
     type: 'function',
