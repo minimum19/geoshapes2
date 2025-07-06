@@ -7,6 +7,5 @@ export default defineConfig({
   plugins: [react(), tailwindcss() as any],
   server: {
     allowedHosts: true,
-  },
-  base: '/geoshapes2/',
+  }
 })
